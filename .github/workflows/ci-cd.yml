@@ -17,12 +17,10 @@ jobs:
           go-version: '1.25'
 
       - name: Test
-        working-directory: ./simplewebapp
         run: |
           go test ./...
 
       - name: Build binary
-        working-directory: ./webapp
         run: |
           go build -v -o webapp
 
