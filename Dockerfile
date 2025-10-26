@@ -1,5 +1,5 @@
 # build stage
-FROM golang:1.20-alpine AS build
+FROM golang:1.25-alpine AS build
 WORKDIR /src
 COPY . .
 RUN go build -o /bin/webapp
