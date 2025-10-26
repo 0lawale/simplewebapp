@@ -39,7 +39,7 @@ jobs:
 
       - name: Build and push image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/simplewebapp:latest ./webapp
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/simplewebapp:latest .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/simplewebapp:latest
 
   deploy:
