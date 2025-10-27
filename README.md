@@ -102,7 +102,7 @@ The workflow file is located at .github/workflows/ci-cd.yml.
 1. Generate or import your SSH key
 2. Launch an EC2 instance using that key pair
 3. Add your private key as a GitHub Secret (SSH_PRIVATE_KEY)
-4.Push code to the main branch — GitHub Actions will:
+4. Push code to the main branch — GitHub Actions will:
 - Build and test the Go app
 - SSH into EC2
 - Pull and restart the app automatically 🎉
